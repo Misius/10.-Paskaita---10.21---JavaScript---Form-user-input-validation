@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="./js/createElementHelper.js" defer></script> -->
+    <script src="./js/forms.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Forms</h1>
+
+        <form id="loginForm" autocomplete="off">
+            <input  id="username" name="username" type="text" placeholder="username">
+            <p class="errorFeedback">iveskite varda</p>
+            <input  id="email" name="email" type="text" placeholder="email">
+            <p class="errorFeedback">iveskite email</p>
+            <div>
+                <input type="checkbox" name="legal" id="legal">
+                <p class="errorFeedback">Būtinas sutikimas</p>
+                <label for="legal">Sutinku su sąlygomis*</label>
+            </div>
+            <fieldset id="timeRadio">
+                <legend>Best time</legend>
+                <input type="radio" name="time" id="morning" value="morning">
+                <label for="morning">Morning</label>
+                <input type="radio" name="time" id="afternoon" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+            </fieldset>
+            <button type="submit">Login</button>
+        </form>
+
+        <div id="app">
+            <h2 class="subTitle">hello Friday</h2>
+            <p class="text">I am text</p>
+        </div>
+    </div>
+</body>
+</html>
